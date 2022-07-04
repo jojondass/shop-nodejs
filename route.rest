@@ -1,0 +1,29 @@
+###
+POST http://localhost:3001/articles/newArticle
+Content-Type: application/json
+
+{
+  "titre": "Article 2",
+  "description": "description de l'article",
+  "prix": 58
+}
+
+###
+GET http://localhost:3001/articles/
+
+###
+GET http://localhost:3001/articles/6290baeef5b7bee9a88819c6
+
+
+###
+PATCH http://localhost:3001/articles/6290baeef5b7bee9a88819c6
+Content-Type: application/json
+
+{
+  "titre": "Article modifie",
+  "description": "description de l'article modifie",
+  "prix": 8
+}
+
+###
+DELETE  http://localhost:3001/articles/6290c1a1eff5b281ba1ed6c7
